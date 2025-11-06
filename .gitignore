@@ -2,5 +2,6 @@
 /package-lock.json
 /dist/
 /vendor/
+/node_modules/
 /wordpress/
 .phpunit.result.cache
