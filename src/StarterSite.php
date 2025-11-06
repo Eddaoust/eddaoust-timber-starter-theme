@@ -7,6 +7,7 @@
 
 namespace App;
 
+use App\Acf\BlocksManager;
 use App\Acf\FieldsManager;
 use App\Theme\Asset;
 use App\Theme\CustomPostType;
@@ -39,6 +40,7 @@ class StarterSite extends Site {
 
 		if(class_exists('ACF')) {
 			FieldsManager::get_instance();
+			BlocksManager::get_instance();
 		}
 
 		add_filter( 'timber/context', [ $this, 'add_to_context' ] );
